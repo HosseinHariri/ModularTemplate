@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Customers\Edit\" />
+    <Folder Include="Customers\GetById\" />
+    <Folder Include="Customers\Delete\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="libphonenumber-csharp" Version="8.12.38" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ModularTemplate.Data\ModularTemplate.Data.csproj" />
+    <ProjectReference Include="..\ModularTemplate.Framework\ModularTemplate.Framework.csproj" />
+  </ItemGroup>
+
+</Project>
